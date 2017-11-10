@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BorderlessButtons</string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+                This sample demonstrates the use of borderless buttons, bottom button bars
+                (OK and Cancel) and dividers to establish visual structure.
+
+
+        ]]>
+    </string>
+    <string name="docs_link_title">Design docs: borderless buttons</string>
+</resources>

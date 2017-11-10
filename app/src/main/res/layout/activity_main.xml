@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:dividerHorizontal"
+    android:showDividers="middle">
+
+    <TextView
+
+        android:padding="16dp"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/intro_message" />
+
+    <!--
+        Remember to use padding on your ListViews to adhere to the standard
+        metrics described in the Android Design guidelines. When doing so,
+        you should set the android:scrollbarStyle such that the scrollbar
+        doesn'isn't inset.
+    -->
+    <ListView android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <!--
+        When using the Holo theme (setting your activity or app theme to
+        Theme.Holo or one of its descendants), a LinearLayout with the
+        ?android:buttonBarStyle will draw dividers (with padding) between
+        buttons.
+    -->
+    <LinearLayout
+        style="?android:buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--
+            Make sure to apply the ?android:buttonBarStyle to each button
+            in the button bar.
+
+            In the Holo theme, this style is very similar to
+            ?android:borderlessButtonStyle, but designed for use specifically
+            in horizontal button bars.
+        -->
+        <Button style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="cancel" />
+
+        <Button style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/ok_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ok" />
+
+    </LinearLayout>
+
+</LinearLayout>
